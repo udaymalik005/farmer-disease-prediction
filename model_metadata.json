@@ -1,0 +1,137 @@
+{
+  "model_type": "Random Forest Classifier",
+  "accuracy": 0.947,
+  "f1_score": 0.9467,
+  "precision": 0.9475,
+  "recall": 0.947,
+  "cv_mean": 0.9476,
+  "cv_std": 0.006,
+  "cv_scores": [
+    0.953,
+    0.95,
+    0.941,
+    0.954,
+    0.94
+  ],
+  "feature_columns": [
+    "temperature_celsius",
+    "humidity_percent",
+    "rainfall_mm",
+    "soil_ph",
+    "nitrogen_kg_ha",
+    "phosphorus_kg_ha",
+    "potassium_kg_ha",
+    "wind_speed_kmh",
+    "sunlight_hours",
+    "leaf_wetness_hours",
+    "field_area_hectares",
+    "days_after_sowing",
+    "prev_disease_history"
+  ],
+  "target_column": "disease_label",
+  "classes": [
+    "Anthracnose",
+    "Bacterial Wilt",
+    "Downy Mildew",
+    "Fusarium Wilt",
+    "Healthy",
+    "Leaf Blight",
+    "Mosaic Virus",
+    "Powdery Mildew",
+    "Root Rot",
+    "Rust Disease"
+  ],
+  "n_estimators": 200,
+  "train_samples": 4000,
+  "test_samples": 1000,
+  "feature_importance": {
+    "temperature_celsius": 0.2124824578789849,
+    "rainfall_mm": 0.1809763885629675,
+    "humidity_percent": 0.1658318428286648,
+    "nitrogen_kg_ha": 0.12212300439720437,
+    "potassium_kg_ha": 0.10494405270836468,
+    "soil_ph": 0.0957789872889296,
+    "phosphorus_kg_ha": 0.07112987105923277,
+    "wind_speed_kmh": 0.009486511984349659,
+    "days_after_sowing": 0.009038425946066993,
+    "leaf_wetness_hours": 0.008881738557138872,
+    "sunlight_hours": 0.008823157633602276,
+    "field_area_hectares": 0.008767877351191215,
+    "prev_disease_history": 0.0017356838033023853
+  },
+  "classification_report": {
+    "Anthracnose": {
+      "precision": 0.9473684210526315,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9,
+      "support": 63.0
+    },
+    "Bacterial Wilt": {
+      "precision": 0.8571428571428571,
+      "recall": 0.7674418604651163,
+      "f1-score": 0.8098159509202454,
+      "support": 86.0
+    },
+    "Downy Mildew": {
+      "precision": 0.9876543209876543,
+      "recall": 0.9876543209876543,
+      "f1-score": 0.9876543209876543,
+      "support": 81.0
+    },
+    "Fusarium Wilt": {
+      "precision": 0.9230769230769231,
+      "recall": 0.9473684210526315,
+      "f1-score": 0.935064935064935,
+      "support": 38.0
+    },
+    "Healthy": {
+      "precision": 1.0,
+      "recall": 0.9915966386554622,
+      "f1-score": 0.9957805907172996,
+      "support": 238.0
+    },
+    "Leaf Blight": {
+      "precision": 0.8357142857142857,
+      "recall": 0.9069767441860465,
+      "f1-score": 0.8698884758364313,
+      "support": 129.0
+    },
+    "Mosaic Virus": {
+      "precision": 0.9452054794520548,
+      "recall": 0.9452054794520548,
+      "f1-score": 0.9452054794520548,
+      "support": 73.0
+    },
+    "Powdery Mildew": {
+      "precision": 0.941747572815534,
+      "recall": 0.9797979797979798,
+      "f1-score": 0.9603960396039604,
+      "support": 99.0
+    },
+    "Root Rot": {
+      "precision": 0.9891304347826086,
+      "recall": 1.0,
+      "f1-score": 0.994535519125683,
+      "support": 91.0
+    },
+    "Rust Disease": {
+      "precision": 0.9901960784313726,
+      "recall": 0.9901960784313726,
+      "f1-score": 0.9901960784313726,
+      "support": 102.0
+    },
+    "accuracy": 0.947,
+    "macro avg": {
+      "precision": 0.9417236373455923,
+      "recall": 0.9373380380171176,
+      "f1-score": 0.9388537390139637,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.9475264414486226,
+      "recall": 0.947,
+      "f1-score": 0.9466699734464549,
+      "support": 1000.0
+    }
+  }
+}
